@@ -2,7 +2,7 @@ import { Message } from "discord.js";
 import { ICommand, CommandCategory } from "../interfaces/ICommand";
 
 export default class Ping implements ICommand {
-	category: CommandCategory = "info";
+	category: CommandCategory = CommandCategory.OTHER;
 	aliases = ["ping"];
 	description = "Pong!";
 	usage = "ping";
